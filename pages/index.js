@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -32,13 +33,14 @@ export default function Home() {
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
+          <Link href="/about">
           <a
-            href="/about"
             className={styles.card}
           >
             <h2>Guapa &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
+          </Link>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
